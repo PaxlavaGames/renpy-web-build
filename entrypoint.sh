@@ -4,6 +4,7 @@ echo "Copying custom web command"
 ls
 ls ./renpy/launcher/game/
 chmod +rwx ./renpy/launcher/game/distribute.rpy
+cp custom_web_build_command.rpy ./renpy/launcher/game/custom_web_build_command.rpy
 bash -c "./custom_web_build_command.rpy >> ./renpy/launcher/game/distribute.rpy"
 echo "Done"
 echo "Trying to build project in '$1'..."
