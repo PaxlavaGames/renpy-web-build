@@ -7,5 +7,6 @@ COPY entrypoint.sh /entrypoint.sh
 COPY custom_web_build_command.rpy /custom_web_build_command.rpy
 
 RUN chmod +x ./entrypoint.sh
+RUN chmod +rwx ./entypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
