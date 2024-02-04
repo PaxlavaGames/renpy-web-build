@@ -1,0 +1,16 @@
+name: "RenPy Build"
+author: 'PaxlavaGames'
+description: "GitHub action to build RenPy projects"
+inputs:
+  path:
+    description: "RenPy project path"
+    required: false
+    default: "."
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.path }}
+branding:
+  color: 'blue'
+  icon: 'box'

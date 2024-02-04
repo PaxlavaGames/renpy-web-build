@@ -1,0 +1,22 @@
+name: Build RenPy
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install RenPy
+      uses: PaxlavaGames/renpy-install@v0.1.2
+      with:
+        version: "8.1.3"
+    - name: Build RenPy
+      uses: PaxlavaGames/renpy-build@main
+      with:
+        path: "./testing"
+    - name: Check results
+      run: |
+        ls
+        ls ./FunAdventureinTurkey-1.0-dists
