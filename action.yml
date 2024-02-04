@@ -1,6 +1,6 @@
-name: "RenPy Build"
+name: "RenPy Web Build"
 author: 'PaxlavaGames'
-description: "GitHub action to build RenPy projects"
+description: "GitHub action to build RenPy projects for WEB"
 inputs:
   path:
     description: "RenPy project path"
@@ -12,5 +12,5 @@ runs:
   args:
     - ${{ inputs.path }}
 branding:
-  color: 'blue'
+  color: 'yellow'
   icon: 'box'

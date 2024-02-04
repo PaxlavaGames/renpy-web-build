@@ -1,39 +1,39 @@
-# RenPy Build
+# RenPy Web Build
 
-GitHub action to build **RenPy** project 
+GitHub action to build **RenPy** project for web
 
 #### Support
 [![Documentation](https://img.shields.io/badge/docs-0094FF.svg)][documentation_path]
-[![Discussions](https://img.shields.io/badge/discussions-ff0068.svg)](https://github.com/PaxlavaGames/renpy-build/discussions/)
-[![Issues](https://img.shields.io/badge/issues-11AE13.svg)](https://github.com/PaxlavaGames/renpy-build/issues/)
+[![Discussions](https://img.shields.io/badge/discussions-ff0068.svg)](https://github.com/PaxlavaGames/renpy-web-build/discussions/)
+[![Issues](https://img.shields.io/badge/issues-11AE13.svg)](https://github.com/PaxlavaGames/renpy-web-build/issues/)
 
 #### Development
-[![Last Commit](https://img.shields.io/github/last-commit/PaxlavaGames/renpy-build/main
-)](https://github.com/PaxlavaGames/renpy-build)
-- [![Issues](https://img.shields.io/github/issues/PaxlavaGames/renpy-build
-)](https://github.com/PaxlavaGames/renpy-build/issues/)
-[![Closed Issues](https://img.shields.io/github/issues-closed/PaxlavaGames/renpy-build
-)](https://github.com/PaxlavaGames/renpy-build/issues/)
-- [![Pull Requests](https://img.shields.io/github/issues-pr/PaxlavaGames/renpy-build
-)](https://github.com/PaxlavaGames/renpy-build/pulls)
-[![Closed Pull Requests](https://img.shields.io/github/issues-pr-closed-raw/PaxlavaGames/renpy-build
-)](https://github.com/PaxlavaGames/renpy-build/pulls)
-- [![Discussions](https://img.shields.io/github/discussions/PaxlavaGames/renpy-build
-)](https://github.com/PaxlavaGames/renpy-build/discussions/)
+[![Last Commit](https://img.shields.io/github/last-commit/PaxlavaGames/renpy-web-build/main
+)](https://github.com/PaxlavaGames/renpy-web-build)
+- [![Issues](https://img.shields.io/github/issues/PaxlavaGames/renpy-web-build
+)](https://github.com/PaxlavaGames/renpy-web-build/issues/)
+[![Closed Issues](https://img.shields.io/github/issues-closed/PaxlavaGames/renpy-web-build
+)](https://github.com/PaxlavaGames/renpy-web-build/issues/)
+- [![Pull Requests](https://img.shields.io/github/issues-pr/PaxlavaGames/renpy-web-build
+)](https://github.com/PaxlavaGames/renpy-web-build/pulls)
+[![Closed Pull Requests](https://img.shields.io/github/issues-pr-closed-raw/PaxlavaGames/renpy-web-build
+)](https://github.com/PaxlavaGames/renpy-web-build/pulls)
+- [![Discussions](https://img.shields.io/github/discussions/PaxlavaGames/renpy-web-build
+)](https://github.com/PaxlavaGames/renpy-web-build/discussions/)
 
 [//]: # (#### Repository Stats)
 
-[//]: # ([![Stars]&#40;https://img.shields.io/github/stars/PaxlavaGames/renpy-build)
+[//]: # ([![Stars]&#40;https://img.shields.io/github/stars/PaxlavaGames/renpy-web-build)
 
-[//]: # (&#41;]&#40;https://github.com/PaxlavaGames/renpy-build&#41;)
+[//]: # (&#41;]&#40;https://github.com/PaxlavaGames/renpy-web-build&#41;)
 
-[//]: # ([![Contributors]&#40;https://img.shields.io/github/contributors/PaxlavaGames/renpy-build)
+[//]: # ([![Contributors]&#40;https://img.shields.io/github/contributors/PaxlavaGames/renpy-web-build)
 
-[//]: # (&#41;]&#40;https://github.com/PaxlavaGames/renpy-buildgraphs/contributors&#41;)
+[//]: # (&#41;]&#40;https://github.com/PaxlavaGames/renpy-web-buildgraphs/contributors&#41;)
 
-[//]: # ([![Forks]&#40;https://img.shields.io/github/forks/PaxlavaGames/renpy-build)
+[//]: # ([![Forks]&#40;https://img.shields.io/github/forks/PaxlavaGames/renpy-web-build)
 
-[//]: # (&#41;]&#40;https://github.com/PaxlavaGames/renpy-build&#41;)
+[//]: # (&#41;]&#40;https://github.com/PaxlavaGames/renpy-web-build&#41;)
 
 <hr>
 
@@ -69,14 +69,14 @@ jobs:
       with:
         version: "8.1.3"
     - name: Build RenPy
-      uses: PaxlavaGames/renpy-build@v0.1.1
+      uses: PaxlavaGames/renpy-web-build@v0.1.0
 ```
 
 ### Run using last version (maybe unstable)
 
 ```yaml
 uses: PaxlavaGames/renpy-install@main
-uses: PaxlavaGames/renpy-build@main
+uses: PaxlavaGames/renpy-web-build@main
 ```
 
 ## Parameters
@@ -103,7 +103,7 @@ jobs:
       with:
         version: "8.1.3"
     - name: Build RenPy
-      uses: PaxlavaGames/renpy-build@0.1.1
+      uses: PaxlavaGames/renpy-web-build@0.1.0
       with:
         path: "./testing"
 ```
@@ -119,8 +119,8 @@ Be free to use, fork, clone and contribute.
 
 ## Features
 
-Build **RenPy** project (Except web-build)
-To make **web-build** use [renpy-lint](https://github.com/marketplace/actions/renpy-web-build)
+Build **RenPy** project only for WEB
+To make **other builds** use [renpy-lint](https://github.com/marketplace/actions/renpy-build)
 To lint **RenPy** project use [renpy-lint](https://github.com/marketplace/actions/renpy-lint)
 
 ## Development Status
@@ -145,4 +145,4 @@ You are welcome! To easy start please check:
 
 Empty yet
 
-[documentation_path]: https://github.com/PaxlavaGames/renpy-build
+[documentation_path]: https://github.com/PaxlavaGames/renpy-web-build
