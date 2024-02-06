@@ -37,6 +37,8 @@ GitHub action to build **RenPy** project for web
 
 <hr>
 
+## This action don't work. Please check this [Issue](https://github.com/renpy/renpy/issues/5343) for details
+
 ## Menu
 
 - [Quickstart](#quickstart)
@@ -44,6 +46,7 @@ GitHub action to build **RenPy** project for web
 - [Mission](#mission)
 - [Open Source Project](#open-source-project)
 - [Features](#features)
+- [Requirements](#requirements)
 - [Development Status](#development-status)
 - [Examples](#examples)
 - [Contributing](#contributing)
@@ -65,9 +68,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Install RenPy
-      uses: PaxlavaGames/renpy-install@v0.1.2
+      uses: PaxlavaGames/renpy-install@v0.2.0
       with:
-        version: "8.1.3"
+        version: "8.2.0"
     - name: Build RenPy
       uses: PaxlavaGames/renpy-web-build@v0.1.0
 ```
@@ -99,9 +102,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Install RenPy
-      uses: PaxlavaGames/renpy-install@v0.1.2
+      uses: PaxlavaGames/renpy-install@v0.2.0
       with:
-        version: "8.1.3"
+        version: "8.2.0"
     - name: Build RenPy
       uses: PaxlavaGames/renpy-web-build@0.1.0
       with:
@@ -120,8 +123,12 @@ Be free to use, fork, clone and contribute.
 ## Features
 
 Build **RenPy** project only for WEB
-To make **other builds** use [renpy-lint](https://github.com/marketplace/actions/renpy-build)
+To make **other builds** use [renpy-build](https://github.com/marketplace/actions/renpy-build)
 To lint **RenPy** project use [renpy-lint](https://github.com/marketplace/actions/renpy-lint)
+
+## Requirements
+
+RenPy SDK version >= **8.2.0**
 
 ## Development Status
 

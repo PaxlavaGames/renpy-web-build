@@ -11,5 +11,5 @@ cp web.rpy ./renpy/launcher/game/web.rpy
 # bash -c "./custom_web_build_command.rpy >> ./renpy/launcher/game/distribute.rpy"
 echo "Done"
 echo "Trying to build project in '$1'..."
-./renpy/renpy.sh ./renpy/launcher custom_web_build_command $1
+./renpy/renpy.sh ./renpy/launcher web_build $1
 echo "Finished"
