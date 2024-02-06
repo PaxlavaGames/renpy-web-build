@@ -37,7 +37,7 @@ GitHub action to build **RenPy** project for web
 
 <hr>
 
-## This action don't work. Please check this [Issue](https://github.com/renpy/renpy/issues/5343) for details
+## This action doesn't work. Please check this [Issue](https://github.com/renpy/renpy/issues/5343) for details
 
 ## Menu
 
