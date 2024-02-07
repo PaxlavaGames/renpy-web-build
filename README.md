@@ -71,6 +71,7 @@ jobs:
       uses: PaxlavaGames/renpy-install@v0.2.0
       with:
         version: "8.2.0"
+        download_web: "yes"
     - name: Build RenPy
       uses: PaxlavaGames/renpy-web-build@v0.1.0
 ```
@@ -105,6 +106,7 @@ jobs:
       uses: PaxlavaGames/renpy-install@v0.2.0
       with:
         version: "8.2.0"
+        download_web: "yes"
     - name: Build RenPy
       uses: PaxlavaGames/renpy-web-build@0.1.0
       with:
