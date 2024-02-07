@@ -37,8 +37,6 @@ GitHub action to build **RenPy** project for web
 
 <hr>
 
-## This action doesn't work. Please check this [Issue](https://github.com/renpy/renpy/issues/5343) for details
-
 ## Menu
 
 - [Quickstart](#quickstart)
@@ -73,7 +71,7 @@ jobs:
         version: "8.2.0"
         download_web: "yes"
     - name: Build RenPy
-      uses: PaxlavaGames/renpy-web-build@v0.1.1
+      uses: PaxlavaGames/renpy-web-build@v0.1.2
 ```
 
 ### Run using last version (maybe unstable)
@@ -108,7 +106,7 @@ jobs:
         version: "8.2.0"
         download_web: "yes"
     - name: Build RenPy
-      uses: PaxlavaGames/renpy-web-build@0.1.1
+      uses: PaxlavaGames/renpy-web-build@0.1.2
       with:
         path: "./testing"
 ```
