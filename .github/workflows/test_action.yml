@@ -19,5 +19,7 @@ jobs:
         path: "./testing"
     - name: Check results
       run: |
+        echo "root folder..."
         ls
-        ls ./FunAdventureinTurkey-1.0-dists
+        echo "web build folder..."
+        ls ./web_build
