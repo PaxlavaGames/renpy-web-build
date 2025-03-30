@@ -64,14 +64,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Install RenPy
       uses: PaxlavaGames/renpy-install@v0.3.0
       with:
         version: "8.2.0"
         download_web: "yes"
     - name: Build RenPy
-      uses: PaxlavaGames/renpy-web-build@v0.1.2
+      uses: PaxlavaGames/renpy-web-build@v0.2.0
 ```
 
 ### Run using last version (maybe unstable)
@@ -90,7 +90,7 @@ uses: PaxlavaGames/renpy-web-build@main
 ### Example usage with parameters
 
 ```yaml
-name: Lint RenPy
+name: Build RenPy
 
 on:
   push:
@@ -99,16 +99,74 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Install RenPy
       uses: PaxlavaGames/renpy-install@v0.3.0
       with:
         version: "8.2.0"
         download_web: "yes"
     - name: Build RenPy
-      uses: PaxlavaGames/renpy-web-build@0.1.2
+      uses: PaxlavaGames/renpy-web-build@0.2.0
       with:
         path: "./testing"
+```
+
+### To download the build
+
+```yaml
+name: Build RenPy
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Install RenPy
+      uses: PaxlavaGames/renpy-install@v0.3.0
+      with:
+        version: "8.2.0"
+        download_web: "yes"
+    - name: Build RenPy
+      uses: PaxlavaGames/renpy-web-build@v0.2.0
+    - name: Upload build artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: game-build
+        path: './web_build'
+```
+
+### To publish build on GitHub pages
+
+```yaml
+name: Build RenPy
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Install RenPy
+      uses: PaxlavaGames/renpy-install@v0.3.0
+      with:
+        version: "8.2.0"
+        download_web: "yes"
+    - name: Build RenPy
+      uses: PaxlavaGames/renpy-web-build@v0.2.0
+    - name: Setup Pages
+      uses: actions/configure-pages@v4
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: './web_build'
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
 ```
 
 ## Mission
